@@ -187,3 +187,14 @@ print (repr(s))
 
 you can lstrip, rstrip, strip, or strip('\t')
 to strip something in particular
+
+# Notes on 10/19
+# Program string searching
+
+def main():
+  s1 = "justification"
+  s1.endswith("str") method
+  s1.startswith("str") method
+  s1.find("str") # starting position of "str"
+  s1.count("t")) # how many times t appears
+  returns a -1 in the event of no such string found
