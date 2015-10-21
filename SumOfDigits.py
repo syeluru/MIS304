@@ -3,3 +3,5 @@
 def main():
     # Get a numeric string from the user
     numeric_string = input("Enter an integer: ")
+
+# GET FROM CHRISTIAN

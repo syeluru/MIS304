@@ -198,3 +198,7 @@ def main():
   s1.find("str") # starting position of "str"
   s1.count("t")) # how many times t appears
   returns a -1 in the event of no such string found
+
+Chapter 7 = Lists
+-lists are kind of like arrays but lists are mutable
+-tuple is immutable - these are pretty much arrays
