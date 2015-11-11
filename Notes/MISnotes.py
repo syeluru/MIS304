@@ -202,3 +202,116 @@ def main():
 Chapter 7 = Lists
 -lists are kind of like arrays but lists are mutable
 -tuple is immutable - these are pretty much arrays
+
+# Notes on 10/21
+
+Basically objects are mutable
+A new list will have a new memory allocation,
+even if its the same list as before
+
+# Notes on 10/26
+
+Chap 6 Files
+
+Files can be opened for input or output
+output to a file from the Program
+
+either text file or binary (binary in the end anyways)
+we basically create a variable which references a file object
+
+when you read a line, it automatically adds a '\n' character
+
+# Notes on 11/2
+
+Exception Handling
+
+so far we have been able to do most things without worrying about errors
+Types of Errors (not exhaustive):
+	ValueError
+
+	IndexError
+		-list[3] with only 3 things in the list gives us
+
+We have to catch these errors
+"Try and Except" in Python
+	-exceptions have to be handled by the programmer
+	-typical structure is as follows:
+		-try clause/statement (with possible errors)
+			statement
+			statement
+			statement
+		-except clause
+			-what to do given this error
+			-called the exception handler
+
+In OOP, there are always classes and objects
+-each data type is an object of the respective class
+	-class int, float, etc.
+	-Exception is a class too
+-an error creates an object of type Exception
+	-"throws an exception"
+
+Example:
+	class 'SyntaxError'
+
+-we can add an optional else and finally at the end
+if nothing is returned, then None is returned
+the class of (None) = NoneType
+
+# Notes on 11/4
+
+What happens if an exception is caught/not caught
+in a nested function with other functions
+
+When dealing with files, put all the file processing stuff in an else clause
+-that way, the else will only be executed if we successfully open the file
+
+START TEST 3
+
+# Notes on 11/11
+
+Procedural Programming (comes under the umbrella of OOP)
+-actions and tasks
+-variables holding the data and functions manipulating/processing the data
+-keep the data and actions separate (goal of procedural programming!)
+
+Object Orientation
+-anything and everything is an object
+-need a class to create an object
+	-class represents a template/prototype/blueprint
+-Unified Modeling Language (UML)
+	-diagram for a class
+	-Each class has a name, and attributes/fields/variables (characteristics, basically)
+	-Each class has behaviors/methods that operate on these variables
+-Encapsulation
+-Example of a Chair class
+	-variables:
+		-legs, hand, dimensions, etc
+	-behaviors:
+		-can be moved, picked up, etc.
+-Example: Bank Account
+	-variables:
+		-balance,
+	-behaviors:
+		-get_balance, add/deposit, remove/withdraw
+-We use our blueprint (class) to create objects
+-Process of instantiation
+	-Creating an object from a class
+	ve = ValueError ("some text")
+	^thats an instance of the class ValueError
+
+-Data Hiding
+
+-Need a Driver Program/Client/Test Program that actually uses the class, creates an object, etc.
+	-when I implement (create) a class, I want to protect my variables.
+	-no one should have direct access to my variables. (Data Hiding)
+
+-Example:
+	-Die class
+	-Attribute:
+		-sideUp (what you rolled)
+	-Behaviors:
+		-getSideUp, rollDie
+-define an initializer or Constructor when we define a class
+
+-add two underscores before a variable in a class to make it a private variable

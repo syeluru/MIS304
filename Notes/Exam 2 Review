@@ -1,0 +1,43 @@
+Exam 2 Notes
+24 questions
+2 points each except for 2 questions worth 3
+(total of 44+6=50)
+
+one 5-point bonus question
+(with partial credit)
+
+LOOK AT ONLINE PPT FOR SAMPLE QUESTIONS
+(wednesday will be specific concept review)
+
+String Slicing
+(both positive and negative indices)
+
+String Repetition
+('abc' * 5)
+
+String Testing
+isalpha(), etc.
+
+fun(keyword,args) etc.
+
+strings and list concatenation
+passing a list to a function
+list methods
+
+append, pop, sort, insert
+
+creating lists
+
+str = 'abc'
+list1 = list(str)
+
+list comprehension
+list = [x for x in range(a)]
+
+Exception Handling
+
+Files
+read and write
+read()
+readline()
+readlines()
